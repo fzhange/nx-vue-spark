@@ -1,13 +1,14 @@
 {
   "name": "nx-vue-spark",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
     "lint": "nx lint",
-    "e2e": "nx e2e"
+    "e2e": "nx e2e",
+    "create": "nx list @nx/vue"
   },
   "private": true,
   "maintainers": [

@@ -61,8 +61,21 @@ start, build and test your application.
 
 ```json
 {
-  "start": "nx serve",
-  "build": "nx build",
-  "test": "nx test"
+  "start": "nx serve", // start dev server
+  "build": "nx build", // build application
+  "test": "nx test", // runs tests using Jest
+  "lint": "nx lint", // runs linting with ESLint
+  "e2e": "nx e2e" // runs e2e tests with Cypress
 }
 ```
+
+More conveniently, we can also run them in parallel using the following syntax:
+
+```bash
+npx nx run-many -t test lint e2e
+```
+
+## Caching
+
+One thing to highlight is that Nx is able to cache the tasks you run.
+![cache file](https://pic.imgdb.cn/item/65f04da09f345e8d03037bac.png)
