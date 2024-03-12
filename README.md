@@ -75,7 +75,18 @@ More conveniently, we can also run them in parallel using the following syntax:
 npx nx run-many -t test lint e2e
 ```
 
+::: tip
+quickly create a component in your repo.
+
+```bash
+npx nx g @nx/vue:component  index  --directory=src/components/hello-world
+```
+
+more functionality. Please look official doc
+
+:::
+
 ## Caching
 
-One thing to highlight is that Nx is able to cache the tasks you run.
+One thing to highlight is that Nx can cache the tasks you run.
 ![cache file](https://pic.imgdb.cn/item/65f04da09f345e8d03037bac.png)

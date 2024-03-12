@@ -8,7 +8,7 @@
     "test": "nx test",
     "lint": "nx lint",
     "e2e": "nx e2e",
-    "create": "nx list @nx/vue"
+    "create-component": "./scripts/create-component.ts"
   },
   "private": true,
   "maintainers": [
@@ -16,7 +16,8 @@
   ],
   "type": "module",
   "dependencies": {
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@nx/cypress": "18.0.8",
