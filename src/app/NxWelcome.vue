@@ -32,7 +32,7 @@ defineProps<{
             </svg>
             <span>You&apos;re up and running</span>
           </h2>
-          <a href="#commands"> What&apos;s next? </a>
+          <a href="#commands"> super cool Vue3 application </a>
         </div>
         <div class="logo-container">
           <svg
@@ -571,9 +571,9 @@ pre {
   margin-left: 2.5rem;
 }
 #hero .text-container a {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--vp-c-brand-1);
   border-radius: 0.75rem;
-  color: rgba(55, 65, 81, 1);
+  color: #fff;
   display: inline-block;
   margin-top: 1.5rem;
   padding: 1rem 2rem;
@@ -784,6 +784,7 @@ pre {
 #commands {
   padding: 2.5rem 2rem;
   margin-top: 3.5rem;
+  font-size: 18px;
   color: var(--vp-c-text-1);
 }
 #commands h2 {

@@ -1,8 +1,42 @@
 # NxVueSpark
 
+![cache file](https://pic.imgdb.cn/item/65f124c09f345e8d03cf6f37.png)
+
 Hello, fellows. Welcome to the NxVueSpark.
 
 The NxVueSpark is a vue3 project with nx as a build tool. It can assist you in starting a vue3 project swiftly.
+
+## 🚀 Features
+
+- 💪 the nx support
+- 💪 Out of the box
+- 💪 Cache the tasks you run
+- 💪 multiple theme support
+- 💪 i18n support
+- 💪 a Cypress based set of e2e tests (e2e/)
+- 💪 Prettier ESLint Vitest preconfigured
+
+## 🦄 Usage
+
+1. clone repo first.
+
+```bash
+ git clone git@github.com:fzhange/NxVueSpark.git
+ npm install
+ npm start
+```
+
+2. Visit <http://localhost:4200/> in your local browser
+
+## 🤔 Some Questions
+
+Here are some questions that you guys may want to ask.
+
+1.
+
+## 🌸 Thanks
+
+Hope this repository can help you guys.
 
 ## Project structure
 
