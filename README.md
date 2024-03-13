@@ -1,6 +1,8 @@
 # NxVueSpark
 
-![cache file](https://pic.imgdb.cn/item/65f124c09f345e8d03cf6f37.png)
+![cache file](https://i2.100024.xyz/2024/03/13/ly83oh.webp)
+
+<!-- https://pic.imgdb.cn/item/65f124c09f345e8d03cf6f37.png -->
 
 Hello, fellows. Welcome to the NxVueSpark.
 
