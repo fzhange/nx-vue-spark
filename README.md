@@ -104,8 +104,9 @@ npx nx g @nx/vue:component  index  --directory=src/components/hello-world
 Let me explain a couple of things that might be new to you.
 | **File** | **Description** |
 | --- | --- |
-| **nx.json** | This is where we fine-tune how Nx works. We define what cacheable operations there are, and configure our task pipeline. More on that soon. |
-| **project.json** | This file is where you can modify the inferred tasks for the NxVueSpark project. More about this later. |
+| **nx.json** | This is where we fine-tune how Nx works. We define what cacheable operations there are, and configure our task pipeline. |
+| **project.json** | This file is where you can modify the inferred tasks for the NxVueSpark project. |
+| **vite.config.ts** | This file is where you can modify vite for the NxVueSpark project. |
 
 > [!TIP]
 > The concept of nx.json and project.json comes from nx team. If you want to know more about how to configure it? You can visit the official doc.
