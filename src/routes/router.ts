@@ -1,12 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
-import HelloWorld from '../components/hello-world/index.vue';
-import NxWelcome from '../app/NxWelcome.vue';
+import NxWelcome from 'app/NxWelcome.vue';
+import productsRoutes from 'routes/products.routes';
 
-const routes = [
-  { path: '/', component: NxWelcome },
-  { path: '/about', component: HelloWorld },
-];
+const routes = [{ path: '/', component: NxWelcome }, ...productsRoutes];
 
 const router = createRouter({
   history: createWebHashHistory(),

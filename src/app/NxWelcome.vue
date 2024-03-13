@@ -524,6 +524,7 @@ pre {
   width: 100%;
 }
 #welcome {
+  color: var(--vp-c-text-1);
   margin-top: 2.5rem;
 }
 #welcome h1 {
@@ -594,11 +595,13 @@ pre {
   gap: 4rem;
   grid-template-columns: 1fr;
   margin-top: 3.5rem;
+  color: var(--vp-c-text-1);
 }
 #learning-materials {
   padding: 2.5rem 2rem;
 }
 #learning-materials h2 {
+  color: var(--vp-c-text-1);
   font-weight: 500;
   font-size: 1.25rem;
   letter-spacing: -0.025em;
@@ -781,6 +784,7 @@ pre {
 #commands {
   padding: 2.5rem 2rem;
   margin-top: 3.5rem;
+  color: var(--vp-c-text-1);
 }
 #commands h2 {
   font-size: 1.25rem;

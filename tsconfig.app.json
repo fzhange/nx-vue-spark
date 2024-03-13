@@ -2,8 +2,21 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "baseUrl": ".", // this is must. Ts will look from the root directory.
+    "paths": {
+      "@/*": ["src/*"], // map @ to src/ directory.
+      "app/*": ["src/app/*"],
+      "components/*": ["src/components/*"],
+      "routes/*": ["src/routes/*"],
+      "composables/*": ["src/composables/*"]
+    }
   },
+  "plugins": [
+    {
+      "name": "vue"
+    }
+  ],
   "exclude": [
     "src/**/*.spec.ts",
     "src/**/*.test.ts",
