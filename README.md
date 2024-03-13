@@ -1,10 +1,18 @@
 # NxVueSpark
 
-![cache file](https://s1.imagehub.cc/images/2024/03/13/9a73d8333d97ee2a760e2680dce92c0d.png)
+![portal-logo](https://s1.imagehub.cc/images/2024/03/13/9a73d8333d97ee2a760e2680dce92c0d.png)
+
+<div>
+  <p align="center">
+    English | <a href="./README_CN.md">简体中文</a>
+  </p>
+</div>
 
 Hello, fellows. Welcome to the NxVueSpark.
 
 The NxVueSpark is a vue3 project with nx as a build tool. It can assist you in starting a vue3 project swiftly.
+
+If you want to build a **monorepo** with vu3 and nx. You can use [nx-vue-cosmopolis](https://github.com/fzhange/nx-vue-cosmopolis)
 
 ## 🚀 Features
 
@@ -32,11 +40,10 @@ The NxVueSpark is a vue3 project with nx as a build tool. It can assist you in s
 
 Here are some questions that you guys may want to ask.
 
-1.
-
 ## 🌸 Thanks
 
 Hope this repository can help you guys.
+If you like it. Please give me a star, thanks.
 
 ## Project structure
 
