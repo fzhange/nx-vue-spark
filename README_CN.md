@@ -18,7 +18,7 @@ NxVueSpark 是一个基于 NX 作为构建工具的 vue3 模板工程。她可�
 - **生态丰富**
 - **国外大厂都在用**
 
-![image](https://nx.dev/documentation/shared/images/benchmarks/ts-benchmark.gif)
+![alt text](./docs/zh/images/ts-benchmark.gif)
 
 这里是官方的 [benchmarks](https://nx.dev/showcase/benchmarks)
 
