@@ -22,7 +22,7 @@ If you want to build a **monorepo** with vue3 and nx. You can use [nx-vue-cosmop
 - 💪 multiple theme support
 - 💪 i18n support
 - 💪 a Cypress based set of e2e tests (e2e/)
-- 💪 Prettier ESLint Vitest preconfigured
+- 💪 Ts Prettier ESLint Vitest preconfigured
 
 ## 🦄 Usage
 
@@ -36,7 +36,7 @@ If you want to build a **monorepo** with vue3 and nx. You can use [nx-vue-cosmop
 
 2. Visit <http://localhost:4200/> in your local browser
 
-## serve script
+## ⚙ serve script
 
 start, build and test your application.
 
@@ -62,7 +62,7 @@ Also, I wanted to mention that Nx offers a command-line interface that can assis
 npx nx g @nx/vue:component  index  --directory=src/components/hello-world
 ```
 
-## project structure
+## 🌲 project structure
 
 ```ts
 .
@@ -114,4 +114,4 @@ Let me explain a couple of things that might be new to you.
 ## 🌸 Thanks
 
 Hope this repository can help you guys.
-If you like it. Please give me a star, thanks.
+If you like it. Please give me a star, thanks. ⭐️

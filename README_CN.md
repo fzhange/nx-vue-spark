@@ -2,21 +2,35 @@
 
 ![portal-logo](https://s1.imagehub.cc/images/2024/03/13/9a73d8333d97ee2a760e2680dce92c0d.png)
 
-Hello, 家人们. Welcome to the NxVueSpark.
+<div>
+  <p align="center">
+    English | <a href="./README_CN.md">简体中文</a>
+  </p>
+</div>
 
-The NxVueSpark is a vue3 project with nx as a build tool. It can assist you in starting a vue3 project swiftly.
+NxVueSpark 是一个基于 NX 作为构建工具的 vue3 模板工程。她可以帮助你快速创建一个基于 NX 的 vue 独立应用。
+如果你想构建一个基于 NX 的 Vue3 monorepo。你可以使用我的另一个项目[nx-vue-cosmopolis](https://github.com/fzhange/nx-vue-cosmopolis)
 
-If you want to build a **monorepo** with vu3 and nx. You can use [nx-vue-cosmopolis](https://github.com/fzhange/nx-vue-cosmopolis)
+## [为什么用 NX？](./docs/zh/why.md)
+
+- **快**
+- **简单**
+- **生态丰富**
+- **国外大厂都在用**
+
+![image](https://nx.dev/documentation/shared/images/benchmarks/ts-benchmark.gif)
+
+这里是官方的 [benchmarks](https://nx.dev/showcase/benchmarks)
 
 ## 🚀 Features
 
-- 💪 the nx support
-- 💪 Out of the box
-- 💪 Cache the tasks you run
-- 💪 multiple theme support
-- 💪 i18n support
-- 💪 a Cypress based set of e2e tests (e2e/)
-- 💪 Prettier ESLint Vitest preconfigured
+- 💪 nx 支持
+- 💪 开箱即用
+- 💪 缓存你运行的任务，构建更快。
+- 💪 多主题支持
+- 💪 i18n 支持
+- 💪 [Cypress](https://www.cypress.io/) 开箱即用
+- 💪 Ts Prettier ESLint Vitest 开箱即用
 
 ## 🦄 Usage
 
@@ -30,69 +44,7 @@ If you want to build a **monorepo** with vu3 and nx. You can use [nx-vue-cosmopo
 
 2. Visit <http://localhost:4200/> in your local browser
 
-## 🤔 Some Questions
-
-Here are some questions that you guys may want to ask.
-
-1. [why nx?](./docs/zh//why.md)
-
-## 🌸 Thanks
-
-Hope this repository can help you guys.
-If you like it. Please give me a star, thanks.
-
-## Project structure
-
-```
-└─ nx-vue-spark
-   ├─ .vscode
-   │  └─ extensions.json
-   ├─ e2e
-   │  ├─ ...
-   │  ├─ project.json
-   │  ├─ src
-   │  │  ├─ e2e
-   │  │  │  └─ app.cy.ts
-   │  │  ├─ ...
-   │  └─ tsconfig.json
-   ├─ src
-   │  ├─ app
-   │  │  ├─ App.spec.ts
-   │  │  ├─ App.vue
-   │  │  └─ NxWelcome.vue
-   │  ├─ main.ts
-   │  └─ styles.css
-   ├─ index.html
-   ├─ nx.json
-   ├─ package.json
-   ├─ project.json
-   ├─ README.md
-   ├─ tsconfig.app.json
-   ├─ tsconfig.base.json
-   ├─ tsconfig.json
-   ├─ tsconfig.spec.json
-   └─ vite.config.ts
-```
-
-The setup includes.
-
-- a new Vue application at the root of the Nx workspace (src)
-- a Cypress based set of e2e tests (e2e/)
-- Prettier preconfigured
-- ESLint preconfigured
-- Vitest preconfigured
-
-Let me explain a couple of things that might be new to you.
-| **File** | **Description** |
-| --- | --- |
-| **nx.json** | This is where we fine-tune how Nx works. We define what cacheable operations there are, and configure our task pipeline. More on that soon. |
-| **project.json** | This file is where you can modify the inferred tasks for the NxVueSpark project. More about this later. |
-
-::: tip
-The concept of nx.json and project.json comes from nx team. If you want to know more about how to configure it? You can visit the official doc.
-:::
-
-## serve script
+## ⚙ serve script
 
 start, build and test your application.
 
@@ -106,24 +58,69 @@ start, build and test your application.
 }
 ```
 
-More conveniently, we can also run them in parallel using the following syntax:
+一般我们在跑 lint，test、e2e 任务的时候是串行的。随着项目的增大，需要花费很长时间。NX 在支持本地、远程（[nx-cloud](https://nx.app/)）的同时，支持并行任务运行。
 
 ```bash
 npx nx run-many -t test lint e2e
 ```
 
-::: tip
-quickly create a component in your repo.
+同时 Nx 提供了很多方便的辅助能力。比如命令式创建一个规范的组件。帮你打理你需要的一切。
 
 ```bash
 npx nx g @nx/vue:component  index  --directory=src/components/hello-world
 ```
 
-more functionality. Please look official doc
+## 🌲 project structure
 
-:::
+```ts
+.
+├── README.md
+├── README_CN.md
+├── dist
+│   └── nx-vue-spark
+├── docs
+│   ├── en
+│   └── zh
+├── e2e
+│   ├── cypress.config.ts
+│   ├── project.json
+│   ├── src
+│   └── tsconfig.json
+├── index.html
+├── nx.json
+├── package-lock.json
+├── package.json
+├── project.json
+├── scripts
+│   └── create-component.ts
+├── src
+│   ├── app         // your business logic
+│   ├── components  // components logic
+│   ├── composables // your common composables api
+│   ├── const       // constant
+│   ├── main.ts     // project entry
+│   ├── routes      // routes directory
+│   ├── styles
+│   ├── styles.less
+│   └── tools       // tools directory
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.spec.json
+└── vite.config.ts
+```
 
-## Caching
+这里可能有一些新的概念。
 
-One thing to highlight is that Nx can cache the tasks you run.
-![cache file](https://pic.imgdb.cn/item/65f04da09f345e8d03037bac.png)
+| **File**           | **Description**                |
+| ------------------ | ------------------------------ |
+| **nx.json**        | 这个文件是控制 NX 是怎么工作的 |
+| **project.json**   | 这里是 NX 的任务推测配置       |
+| **vite.config.ts** | vite 配置                      |
+
+> [!TIP]
+> nx.json project.json 的概念都是来自于 NX 的。如果你想了解更多，可以查阅官方文档 .
+
+## 🌸 Thanks
+
+希望这个仓库对你有帮助。
+喜欢的话就 star 一下吧 ⭐️
