@@ -12,7 +12,12 @@ Hello, fellows. Welcome to the NxVueSpark.
 
 The NxVueSpark is a vue3 project with nx as a build tool. It can assist you in starting a vue3 project swiftly.
 
-If you want to build a **monorepo** with vue3 and nx. You can use [nx-vue-cosmopolis](https://github.com/fzhange/nx-vue-cosmopolis)
+## other templates
+
+If you want to build a vue or react or whatever application. Some other templates can help you.
+
+- [nx-vue-spark](https://github.com/fzhange/nx-vue-spark) (a vue3 standalone application based on nx)
+- [nx-vue-cosmopolis](https://github.com/fzhange/nx-vue-cosmopolis)(a vue3 mono repo based on nx)
 
 ## 🚀 Features
 
